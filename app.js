@@ -4,6 +4,7 @@ const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const a1db = require("a1-database");
 const wrap = require("./public/src/wrapper");
+const { builtinModules } = require('module');
 
 //set, use...
 app.set("view engine", "pug");
@@ -23,9 +24,6 @@ app.use(
   })
 );
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("server start");
-});
 
 app.get("/", (req, res) => {
   if (req.session && req.session.email !== undefined) {
@@ -84,3 +82,5 @@ app.post(
     res.redirect("/");
   })
 );
+
+module.exports = app;
