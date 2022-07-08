@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-Parser");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const a1db = require("a1-database");
@@ -9,9 +8,9 @@ const wrap = require("./public/src/wrapper");
 //set, use...
 app.set("view engine", "pug");
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(
   session({
     secret: "asdfasffdas",
