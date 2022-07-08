@@ -4,12 +4,14 @@ const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const a1db = require("a1-database");
 const wrap = require("./public/src/wrapper");
-const { builtinModules } = require('module');
+const path = require("path");
 
 //set, use...
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
-app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
+
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.json());
 app.use(
@@ -23,7 +25,6 @@ app.use(
     },
   })
 );
-
 
 app.get("/", (req, res) => {
   if (req.session && req.session.email !== undefined) {
