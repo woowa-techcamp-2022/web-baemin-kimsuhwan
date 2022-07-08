@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title 배달의 민족!
+    script(defer src = "src/Signuppage_phone.js")
+    link(rel = 'stylesheet' href = "style/signup_phone.css")
+  body
+    div(class = "page")
+      div(class="to_home")
+        a(href = "/")
+          img(class="img_closebutton" src="img/icons/closebutton.png")
+        span(class = "header_title") 회원가입
+        button(class = "next_button" disabled) 다음
+      div(class = "phone_container")
+        div(class = "phone_form")
+          div(class = "input_title") 휴대전화
+          div(class = "input_field") 
+            input(type="text" id="input_tlno" maxlength="13")
+            div(class = "warning_text") 제대로 된 전화번호를 입력해주세요.
+          button(class = "get_number") 인증번호 받기
+        div(class = "secure_number")
+          div(class = "input_title") 인증번호
+          div(class = "input_field") 
+            input(type="text" id="input_secure_number" maxlength="13")
+          button(class = "resend_secure_number") 인증번호 다시받기
+
+        

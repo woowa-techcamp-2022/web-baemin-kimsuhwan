@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title 배달의 민족!
+    script(defer src = "src/Signuppage_email.js")
+    link(rel = 'stylesheet' href = "style/signup_email.css")
+  body
+    div(class = "page")
+      div(class = "to_home")
+        a(href = "/")
+          img(class = "img_closebutton" src = "img/icons/closebutton.png")
+        span(class = "header_title") 회원가입
+        button(class = "success_button" type="submit" form = "signup_form" disabled) 완료
+      div(class = "info_container")
+        form(id = "signup_form" action = "/signup" method = "post")
+          div(class = "input_label")
+            label(class="email_area") 이메일
+              div(class = "email_wrapper")
+                input(name = "id" class="input_email")
+                input(type="text" style="display:none")
+                div(class = "warning_text" id = "warning_email") 유효한 이메일이 아닙니다.
+                button(class="email_validation_button" type = "button") 중복확인
+            label(class="nickname_check") 닉네임
+              input(class="input_nickname")
+              div(class = "warning_text" id = "warning_nickname") 닉네임을 입력하세요.
+            label(class="password_check") 비밀번호
+              input(name = "pw" class="input_password")
+              div(class = "warning_text" id = "warning_password") 10자 이상, 대문자,소문자,숫자, 특수문자중 2종류 조합해야 합니다.
+            label(class="birth_check") 생년월일
+              input(class="input_birth" maxlength = "10") 
+              div(class = "warning_text" id = "warning_birth") 올바른 생년월일을 입력하세요.

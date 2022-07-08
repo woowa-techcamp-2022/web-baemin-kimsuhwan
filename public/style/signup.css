@@ -1,0 +1,113 @@
+@import url("style.css");
+
+.page {
+  padding: 15px;
+}
+.to_home {
+  position: relative;
+  width: 100%;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.to_home .img_closebutton {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+}
+
+.agree_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.agree_container * {
+  width: 100%;
+}
+
+.agree_title * {
+  font-size: 25px;
+}
+
+.input_agree *,
+.input_age {
+  width: 100%;
+}
+.form_container form {
+  margin-top: 3rem;
+}
+
+.form_container .agree_label,
+.input_agree .agree_label {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/pictures/checkbox_F.png") no-repeat 0 0px / contain;
+}
+
+input[type="checkbox"]:checked + label {
+  background: url("../img/pictures/checkbox_T.png") no-repeat 0 1px / contain;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+strong {
+  margin-left: 0.5rem;
+}
+.img_arrow {
+  width: 20px;
+}
+.divider {
+  border-bottom: 1px solid #ddd;
+  margin: 1rem 0;
+}
+.age_label {
+  width: 100%;
+  height: 5rem;
+  background-color: #f5f5f5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.age_label img {
+  height: 100%;
+}
+
+.submit_button {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #e6e6e6;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  color: white;
+}
+
+div .active {
+  background-color: #28c1bc;
+}

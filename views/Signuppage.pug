@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    title 배달의 민족!
+    link(rel = 'stylesheet' href = "style/signup.css")
+    script(defer src = "src/Signuppage.js")
+  body
+    div(class = "page")
+      div(class="to_home")
+        a(href = "/")
+          img(class="img_closebutton" src="img/icons/closebutton.png")
+        span(class = "header_title") 회원가입
+
+      div(class="agree_container")
+        div(class="agree_title")
+          h2  어서오세요.
+          h2  약관동의가 필요해요
+        div(class = "form_container")
+          form(action = "/")
+            div(class = "agree_label")
+              input(type="checkbox" id = "check_total")
+              label(for = "check_total")
+              strong 전체동의
+            div(class = "divider")
+            div(class = "input_agree")
+              div(class = "agree_label")
+                input(type="checkbox" id = "check_app" class = "checkbox")
+                label(for = "check_app")
+                strong 배달의민족 이용약관 동의
+                img(class = "img_arrow" src = "img/icons/arrow.png")
+              div(class = "agree_label")
+                input(type="checkbox" id = "check_financial" class = "checkbox")
+                label(for = "check_financial")
+                strong 전자금융거래 이용약관 동의
+                img(class = "img_arrow" src = "img/icons/arrow.png")
+              div(class = "agree_label")
+                input(type="checkbox" id = "check_private" class = "checkbox")
+                label(for = "check_private")
+                strong 개인정보 수집이용 동의
+                img(class = "img_arrow" src = "img/icons/arrow.png")
+              div(class = "agree_label")
+                input(type="checkbox" id = "check_public" class = "checkbox")
+                label(for = "check_public")
+                strong 개인정보 제3자 제공 동의(선택)
+                img(class = "img_arrow" src = "img/icons/arrow.png")
+              div(class = "agree_label")
+                input(type="checkbox" id = "check_sns" class = "checkbox")
+                label(for = "check_sns")
+                strong 마케팅 정보 메일, SMS 수신동의(선택)
+            div(class = "divider")
+            div(class = "input_age")
+              div(class = "age_label")
+                input(type="radio" name = "age-check" class = "radiobox" class = "check_ageover") 
+                strong 만 14세 이상입니다.
+                image(class = "img_ageover" src = "img/pictures/age_over.png")
+              div(class = "age_label")
+                input(type="radio" name = "age-check" class = "radiobox" class = "check_ageunder") 
+                strong 만 14세 미만입니다.
+                image(class = "img_ageunder" src = "img/pictures/age_under.png")
+            div(class = "submit_button") 다음으로

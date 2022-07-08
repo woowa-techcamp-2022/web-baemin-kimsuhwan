@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    title 로그인/회원가입
+    link(rel = 'stylesheet' href = "style/login.css")
+    script(defer src = "src/loginpage.js")
+  body
+    div(class = "page")
+      div(class = "to_home")
+        a(href = "/")
+          img(class = "img_closebutton" src = "img/icons/closebutton.png")
+      div(class = "login_container")
+        div(class = "login_basic")
+          form(class = "login_form" action = "/login" method = "post")
+            input(type = "text" name = "email" class = "input_id" placeholder = "아이디 또는 이메일")
+            p(class = "waring_text") 아이디를 입력하세요.
+
+            input(type = "password" name = "pw" class = "input_password" placeholder = "비밀번호")
+            p(class = "waring_text") 비밀번호를 입력하세요.
+            p(class = "waring_text") 아이디 또는 비밀번호가 일치하지 않습니다. 
+            input(type = "submit" class = "login_button" value = "로그인")
+          div(class = "find_info")
+            span 아이디 찾기
+            span |
+            span 비밀번호 찾기
+        div(class = "login_social")
+          div(class = "login_social_container")
+            div(class = "social_button_list")
+              div(class = "social_button") 페이스북으로 로그인
+              div(class = "social_button") 네이버로 로그인
+              div(class = "social_button") Apple로 로그인
+            div(class = "guide_comment")
+              div 혹시, 배달의 민족이 처음이신가요?
+              a(class = "signup_text" href = "/signup") 회원가입
+      

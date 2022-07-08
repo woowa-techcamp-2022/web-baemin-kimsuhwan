@@ -1,0 +1,131 @@
+@import url(style.css);
+
+.page {
+  padding: 15px;
+}
+.to_home {
+  position: relative;
+  width: 100%;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.to_home .img_closebutton {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+}
+
+.login_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login_container .login_basic {
+  width: 100%;
+  margin-top: 10rem;
+}
+.login_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input_id,
+.input_password,
+.login_button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 0 solid black;
+}
+
+.input_id,
+.input_password {
+  border-bottom: 1px solid #d7d7d7;
+}
+.input_id:focus,
+.input_password:focus {
+  outline: none;
+}
+
+.input_id::placeholder,
+.input_password::placeholder {
+  color: #d7d7d7;
+}
+
+.login_button {
+  border-radius: 2ch;
+  height: 5rem;
+  background-color: #28c1bc;
+  padding: 15px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.find_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a7a7a7;
+}
+.find_info * {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.login_social {
+  width: 100%;
+}
+.login_social_container {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.social_button_list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.social_button {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 5px;
+  border: 0.5px solid black;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.guide_comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup_text {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #28c1bc;
+}
+
+.waring_text {
+  display: none;
+  color: red;
+}

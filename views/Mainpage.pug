@@ -1,0 +1,88 @@
+doctype html
+html
+  head
+    title 배달의 민족!
+    link(rel = 'stylesheet' href = "style/main.css")
+    script(defer src = "src/Mainpage.js")
+  body
+    div(class = "page")
+      div(class = "state_bar")
+        img(class = "img_time" src = "img/icons/time.png" alt = "TIME_IMG")
+        div(class = "right_container")
+          img(class = "img_signal" src = "img/icons/signal.png" alt = "SIGNAL_IMG")
+          img(class = "img_5G" src = "img/icons/5G.png" alt = "5G_IMG")
+          img(class = "img_battery" src = "img/icons/battery.png" alt = "BATTERY_IMG")
+      div(class = "main_container")
+        h1(class = "main_title") My배민
+        div(class = "main_banner")
+          img(class = "img_mainbanner" src = "img/pictures/banner.png" alt = "MAINBANNER_IMG")
+        div(class = "main_profile")
+          a(href = "/login")
+            div
+              img(class = "img_user" src = "img/icons/user.png" alt = "IMG_USER")
+              span(class = "main_profile_ment") #{message}
+            div
+              img(class = "img_arrow" src ="img/icons/arrow.png" alt = "IMG_ARROW") 
+        ul(class = "main_menu")
+          li
+            img(src = "img/icons/coin.png")
+            span 포인트
+          li
+            img(src = "img/icons/coupon.png")
+            span 쿠폰
+          li
+            img(src = "img/icons/gift.png")
+            span 선물함
+          li
+            img(src = "img/icons/heart.png")
+            span 찜
+          li
+            img(src = "img/icons/receipt.png")
+            span 주문내역
+          li
+            img(src = "img/icons/talk.png")
+            span 리뷰관리
+        div(class = "divider")
+        div(class = "sub_banner")
+          a
+            div
+              img(class = "img_sprout" src = "img/icons/sprout.png" alt = "IMG_SPROUT")
+              span 일회용품 덜 쓰기, 함께해요!
+            div
+              img(class = "img_arrow" src ="img/icons/arrow.png" alt = "IMG_ARROW") 
+        div(class = "divider")
+        ul(class = "bottom_menu")
+          li
+            a
+              div
+                div(class = "menu_title")
+                  span 배민페이 등록
+                  img(class = "img_new" src = "img/icons/new.png")
+                span 배민페이로 결재하면 최대 5.5% 배민포인트가 적립됩니다.
+              div
+                img(class = "img_arrow" src ="img/icons/arrow.png" alt = "IMG_ARROW")
+          li
+            a
+              div
+                div(class = "menu_title")
+                  span 가족계정 관리
+                  img(class = "img_new" src = "img/icons/new.png")
+                span 결재수단을 공유해 우리가족의 끼니를 챙겨주세요.
+              div
+                img(class = "img_arrow" src ="img/icons/arrow.png" alt = "IMG_ARROW")  
+
+          li
+            a
+              div
+                div(class = "menu_title")
+                  span 공지사항
+              div
+                img(class = "img_arrow" src ="img/icons/arrow.png" alt = "IMG_ARROW")
+          li
+            a
+              div
+                div(class = "menu_title")
+                  span 배민커낵트
+              div
+                img(class = "img_arrow" src ="img/icons/arrow.png" alt = "IMG_ARROW")
+          

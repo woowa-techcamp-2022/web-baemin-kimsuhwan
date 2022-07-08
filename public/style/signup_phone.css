@@ -1,0 +1,102 @@
+@import url("style.css");
+
+.page {
+  padding: 15px;
+}
+.to_home {
+  position: relative;
+  width: 100%;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.to_home .img_closebutton {
+  height: 20px;
+}
+
+.next_button {
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+.phone_container {
+  margin-top: 5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.phone_form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input_title {
+  width: 100%;
+  text-align: left;
+}
+.input_field {
+  width: 100%;
+  min-height: 20px;
+  display: relative;
+}
+
+#input_tlno,
+#input_secure_number {
+  font-size: 15px;
+  width: 100%;
+  border: 0 solid black;
+  border-bottom: 2px solid black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#input_tlno:focus,
+#input_secure_number:focus {
+  outline: none;
+}
+
+.warning_text {
+  display: none;
+}
+
+.img_cancel {
+  height: 10px;
+}
+.get_number {
+  margin-top: 20px;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background-color: #eee;
+  border: 0px solid #eee;
+}
+
+.secure_number {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+
+.resend_secure_number {
+  margin-top: 2rem;
+  align-self: flex-end;
+  background: none;
+  border: 0 solid black;
+  color: #28c1bc;
+}

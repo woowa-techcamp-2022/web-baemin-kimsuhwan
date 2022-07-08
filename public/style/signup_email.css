@@ -1,0 +1,97 @@
+@import url("style.css");
+
+.page {
+  padding: 15px;
+}
+.to_home {
+  position: relative;
+  width: 100%;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.to_home .img_closebutton {
+  height: 20px;
+}
+
+.success_button {
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.info_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input_label {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input_label label {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  width: 100%;
+  font-size: 20px;
+}
+
+.email_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input_email {
+  width: 80%;
+}
+
+input {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+
+.warning_text {
+  height: 20px;
+  display: none;
+  color: red;
+}
+
+.nickname_check,
+.password_check,
+.birth_check {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+}
